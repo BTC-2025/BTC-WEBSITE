@@ -17,6 +17,7 @@ import AboutUsPage from "./About/AboutUsPage";
 import TermsAndCondition from "./terms&con/TermsAndCondition";
 import RefundPolicy from "./refundpolicy/RefundPolicy";
 import BuyNowPage from "./buynow/BuyNowPage";
+import EmployeePage from "./Employee/EmployeePage";
 
 function App() {
   useEffect(() => {
@@ -41,6 +42,7 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/buynow" element={<BuyNowPage />} />
+        <Route path="/employee/:id" element={<EmployeePage />} />
       </Routes>
       <Footer />
     </Router>
