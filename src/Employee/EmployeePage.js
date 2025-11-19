@@ -9,24 +9,32 @@ const EmployeePage = () => {
   // -----------------------------
   const employees = [
     {
-      id: "btc001b",
-      name: "Selva",
+      id: "btc001a",
+      name: "Shanmugavel A",
       role: "Full Stack Developer",
       email: "selva@example.com",
       phone: "9876543210",
       profile: "https://via.placeholder.com/160"
     },
     {
-      id: "btc002b",
-      name: "Arun",
+      id: "btc001b",
+      name: "Sridharan BR",
       role: "UI/UX Designer",
       email: "arun@example.com",
       phone: "9876543211",
       profile: "https://via.placeholder.com/160"
     },
     {
-      id: "btc003b",
-      name: "Sathish",
+      id: "btc002a",
+      name: "Narendiran",
+      role: "Project Manager",
+      email: "sathish@example.com",
+      phone: "9876543212",
+      profile: "https://via.placeholder.com/160"
+    },
+    {
+      id: "btc002b",
+      name: "Peter Pertia Jebaraj",
       role: "Project Manager",
       email: "sathish@example.com",
       phone: "9876543212",
