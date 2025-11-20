@@ -1,4 +1,4 @@
-/* Base button style */
+
 .industry-btn {
   position: relative;
   overflow: hidden;
@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 
-/* Gradient overlay animation */
+
 .industry-btn::before {
   content: '';
   position: absolute;
@@ -17,15 +17,15 @@
   background: linear-gradient(120deg, #007bff, #00c6ff);
   transition: all 0.5s ease;
   z-index: 0;
-  border-radius: 50px; /* match button rounded-pill */
+  border-radius: 50px; 
 }
 
-/* Move overlay on hover */
+
 .industry-btn:hover::before {
   left: 0;
 }
 
-/* Keep text and icons above overlay */
+
 .industry-btn img,
 .industry-btn h6,
 .industry-btn small {
@@ -34,30 +34,25 @@
   transition: all 0.3s ease;
 }
 
-/* Icon scaling on hover */
 .industry-btn:hover img {
   transform: scale(1.2) rotate(-5deg);
   box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
-/* Text color change on hover */
 .industry-btn:hover h6,
 .industry-btn:hover small {
   color: white !important;
 }
 
-/* Button shadow on hover */
 .industry-btn:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* Smooth transition for active button */
 .industry-btn.active {
   color: white !important;
   background-color: #007bff !important;
 }
 
-/* Right Content Animation */
 .industry-content img {
   border-radius: 12px;
   box-shadow: 0 15px 25px rgba(0,0,0,0.1);
@@ -77,7 +72,6 @@
   color: #007bff;
 }
 
-/* Points cards */
 .industry-points .p-2 {
   background: linear-gradient(145deg, #ffffff, #f0f4f8);
   border-radius: 12px;
@@ -91,7 +85,6 @@
   color: white;
 }
 
-/* Optional: fade-in animation */
 [data-aos] {
   opacity: 0;
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -102,7 +95,6 @@
   transform: translateY(0);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .industry-btn {
     flex-direction: row !important;

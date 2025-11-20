@@ -67,3 +67,21 @@
     transform: translateY(0);
   }
 }
+
+
+.process-icon {
+  font-size: 50px;
+  color: #4b49ac; /* primary purple or your theme color */
+}
+
+.icon-wrapper {
+  background: #f3f2ff;
+  padding: 18px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  min-height: 80px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}

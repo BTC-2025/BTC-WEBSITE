@@ -13,23 +13,32 @@
 }
 
 .tech-slider {
-  position: relative;
-  overflow: hidden;
   width: 100%;
+  overflow: hidden;
+  position: relative;
   margin-top: 50px;
+  padding-top: 40px; /* Required for hover label visibility */
 }
 
 .tech-track {
   display: flex;
   gap: 50px;
-  animation: scroll 30s linear infinite;
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+}
+
+.tech-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tech-item img {
-  margin-top: 10px;
   width: 100px;
   height: 150px;
   object-fit: contain;
+  margin-top: 10px;
   transition: transform 0.5s ease;
 }
 
@@ -37,14 +46,41 @@
   transform: scale(1.3) rotate(10deg);
 }
 
-/* Smooth continuous scroll */
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
+/* Name label on hover */
+.tech-label {
+  position: absolute;
+  top: -30px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.tech-item:hover .tech-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* PERFECT CONTINUOUS SCROLL */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    transform: translateX(-33.33%);
   }
+}
+
+/* Pause slider on hover */
+.tech-slider:hover .tech-track {
+  animation-play-state: paused;
 }
 
 /* Floating circles */

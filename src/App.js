@@ -45,6 +45,7 @@ function App() {
         <Route path="/employee/:id" element={<EmployeePage />} />
       </Routes>
       <Footer />
+      
     </Router>
   );
 }

@@ -24,6 +24,7 @@ const Home = () => {
         <Hero />
         <About />
         <Services />
+        {/* <ServicesCarousel /> */}
         <OurProcess />
         <WhyUsPage />
         <Industries />

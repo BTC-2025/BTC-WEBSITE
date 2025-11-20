@@ -153,9 +153,7 @@
 
 /* Responsive Design */
 @media (max-width: 991.98px) {
-  .custom-navbar {
-    /* padding: 0.6rem 0; */
-  }
+
   
   .navbar-nav-custom {
     margin-left: 0;
@@ -231,4 +229,78 @@
 .offcanvas-header .btn-close {
   filter: invert(1);
   opacity: 1;
+}
+
+
+/* Modal Styles */
+.modal-backdrop {
+  z-index: 1050;
+}
+
+.modal {
+  z-index: 1060;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1.5rem;
+}
+
+.modal-title {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.modal-footer {
+  border-top: 1px solid #e2e8f0;
+  padding: 1.5rem;
+}
+
+.success-icon {
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    margin: 1rem;
+  }
 }
