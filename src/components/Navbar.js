@@ -16,6 +16,7 @@ const Navbar = () => {
 
   const [showConsultationModal,setshowConsultationModal] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [consultationForm, setConsultationForm] = useState({
     consultationType: "",
     product: "",
@@ -194,6 +195,7 @@ const Navbar = () => {
 
 const handleSubmitConsultation = async (e) => {
   e.preventDefault();
+  setIsLoading(true);
 
   try {
     // Prepare data to send
@@ -210,7 +212,7 @@ const handleSubmitConsultation = async (e) => {
     console.log("Sending → ", payload);
 
     // API request
-    const response = await fetch("http://localhost:3009/api/consult/createconsult", {
+    const response = await fetch("https://btc-website-be.onrender.com/api/consult/createconsult", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -243,6 +245,8 @@ const handleSubmitConsultation = async (e) => {
   } catch (error) {
     console.error("API Error:", error);
     alert("Failed to submit. Please try again.");
+  }finally{
+    setIsLoading(false)
   }
 };
 
@@ -835,12 +839,27 @@ const handleSubmitConsultation = async (e) => {
                 </div>
               </div>
 
-              <div className="modal-footer">
+              {/* <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleCloseModal}>
                   Cancel
                 </button>
                 <button type="submit" className="btn btn-primary">
                   Submit Consultation Request
+                </button>
+              </div> */}
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" onClick={handleCloseModal} disabled={isLoading}>
+                  Cancel
+                </button>
+                <button type="submit" className="btn btn-primary" disabled={isLoading}>
+                  {isLoading ? (
+                    <div className="button-loading">
+                      <div className="loading-spinner"></div>
+                      <span>Submitting...</span>
+                    </div>
+                  ) : (
+                    "Submit Consultation Request"
+                  )}
                 </button>
               </div>
             </form>
@@ -1250,6 +1269,64 @@ const handleSubmitConsultation = async (e) => {
             display: none;
           }
         }
+
+        /* Loading Animation Styles */
+.button-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.loading-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Pulse animation for the button during loading */
+.btn-primary:disabled {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(13, 110, 253, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(13, 110, 253, 0);
+  }
+}
+
+/* Ensure proper button styling with loading state */
+.btn {
+  position: relative;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
       `}</style>
     </>
   );

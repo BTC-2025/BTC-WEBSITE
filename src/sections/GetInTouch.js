@@ -24,7 +24,7 @@ const GetInTouch = () => {
     console.log(formData)
 
     try {
-      const res = await axios.post('https://web-contact.onrender.com/api/contact', formData);
+      const res = await axios.post('https://btc-website-be.onrender.com/api/contact/createcontact', formData);
       if (res.status === 200 || res.status === 201) {
         alert('Thank you for contacting us! We will get back to you soon.');
         setFormData({
