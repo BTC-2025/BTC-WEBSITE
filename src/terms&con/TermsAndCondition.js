@@ -8,7 +8,7 @@ const TermsAndCondition = () => {
       <Helmet>
         <title>Terms and Conditions - Burj Tech Consultancy</title>
         <meta name="description" content="Review our Terms and Conditions for using www.btcglobal.info. Covers scope of services, user responsibilities, payment terms, intellectual property, liability, and dispute resolution under Indian law." />
-        <link rel="canonical" href="https://www.btcglobal.info/terms-and-conditions" />
+        <link rel="canonical" href="https://www.burjtechconsultancy.com/terms-and-conditions" />
       </Helmet>
       <div className="container my-5 terms-container">
         <div className="card shadow-sm p-4 border-0">

@@ -1,7 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import ScrollToTop from "./services/ScrollToTop";
+import Loader from "./Loader/Loader";  // <-- Add this
+
 import Home from "./Home/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -18,17 +21,28 @@ import TermsAndCondition from "./terms&con/TermsAndCondition";
 import RefundPolicy from "./refundpolicy/RefundPolicy";
 import BuyNowPage from "./buynow/BuyNowPage";
 import EmployeePage from "./Employee/EmployeePage";
-import Consultation from './components/Consultation'
+import Consultation from "./components/Consultation";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     AOS.init({ duration: 1200, once: true });
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // loading time (2 seconds)
   }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <Router>
       <Navbar />
       <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services/web-development" element={<WebDevelopment />} />
@@ -46,8 +60,8 @@ function App() {
         <Route path="/employee/:id" element={<EmployeePage />} />
         <Route path="/consultation" element={<Consultation />} />
       </Routes>
+
       <Footer />
-      
     </Router>
   );
 }

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import sridharan from "../assets/sridharan.png";
+import sridharan from "../assets/sridharan.jpeg";
+import shanmugavel from '../assets/shanmugavel.jpeg'
+// import peter from '../assets/peter.jpeg'
+import narendiran from '../assets/narendiran.jpeg'
 
 const EmployeePage = () => {
   const { id } = useParams();
@@ -18,44 +21,44 @@ const EmployeePage = () => {
     {
       id: "btc001a",
       name: "Shanmugavel A",
-      role: "Full Stack Developer (Intern)",
-      email: "shanmugavel@example.com",
-      phone: "9876543210",
-      dob: "12/04/2003",
+      role: "Junior Mobile App Developer (Staff)",
+      email: "ashanmugavel821@gmail.com",
+      phone: "6381812437",
+      dob: "18/11/2002",
       bloodgroup: "A+",
       parent: {
-        parentname: "Annamalai",
-        phone: "9876543000"
+        parentname: "Arumugam",
+        phone: "9976263938"
       },
-      profile: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop"
+      profile: shanmugavel
     },
     {
       id: "btc001b",
       name: "Sridharan BR",
-      role: "UI/UX Designer (Trainee)",
-      email: "sridharan@example.com",
-      phone: "9876543211",
+      role: "Junior Backend Developer (Staff)",
+      email: "brsridharan15@gmail.com",
+      phone: "9150902897",
       dob: "15/08/2005",
       bloodgroup: "O+",
       parent: {
         parentname: "Rameshbabu BR",
-        phone: "9150902897"
+        phone: "9715421047"
       },
       profile: sridharan
     },
     {
       id: "btc002a",
       name: "Narendiran",
-      role: "Project Manager (Staff)",
-      email: "naren@example.com",
-      phone: "9876543212",
-      dob: "22/01/2002",
-      bloodgroup: "B+",
+      role: "Junior AI Engineer (Intern)",
+      email: "nmdevi63@gmail.com",
+      phone: "",
+      dob: "08/10/2002",
+      bloodgroup: "O+",
       parent: {
-        parentname: "Rajendiran",
+        parentname: "",
         phone: "9750123456"
       },
-      profile: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop"
+      profile: narendiran
     },
     {
       id: "btc002b",

@@ -125,10 +125,52 @@ const CloudServices = () => {
   return (
     <>
       <Helmet>
-        <title>Cloud Services - Burj Tech Consultancy</title>
-        <meta name="description" content="Expert cloud migration, infrastructure design, DevOps automation, and security services. AWS, Azure, Google Cloud solutions for scalable, cost-efficient business transformation." />
-        <link rel="canonical" href="https://www.btcglobal.info/services/cloud-services" />
+        <title>Cloud Services | Cloud Migration | DevOps | Burj Tech Consultancy</title>
+
+        <meta 
+          name="description" 
+          content="Expert cloud services including AWS, Azure, Google Cloud migration, cloud architecture, DevOps automation, Kubernetes, Docker, Terraform, cloud security, and scalable infrastructure solutions." 
+        />
+
+        <meta 
+          name="keywords" 
+          content="cloud services, cloud migration, AWS consulting, Azure consulting, Google Cloud solutions, DevOps services, Kubernetes setup, Docker deployment, Terraform infrastructure, cloud security, cloud architecture, it companies in Tiruvallur, Burj Tech Consultancy, burjtechconsultancy" 
+        />
+
+        <link 
+          rel="canonical" 
+          href="https://www.burjtechconsultancy.com/services/cloud-services" 
+        />
+
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Cloud Services | Burj Tech Consultancy" />
+        <meta 
+          property="og:description" 
+          content="Cloud migration, DevOps automation, infrastructure design, Kubernetes, Docker, and secure scalable cloud solutions across AWS, Azure, and Google Cloud." 
+        />
+        <meta 
+          property="og:url" 
+          content="https://www.burjtechconsultancy.com/services/cloud-services" 
+        />
+        <meta 
+          property="og:image" 
+          content="https://www.burjtechconsultancy.com/preview-cloud-services.jpg" 
+        />
+
+        {/* Twitter Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Cloud Services | Burj Tech Consultancy" />
+        <meta 
+          name="twitter:description" 
+          content="Expert cloud solutions including migration, DevOps, infrastructure design, Kubernetes, and cloud security." 
+        />
+        <meta 
+          name="twitter:image" 
+          content="https://www.burjtechconsultancy.com/preview-cloud-services.jpg" 
+        />
       </Helmet>
+
       <motion.div
         className="cloud-wrapper"
         initial={{ opacity: 0 }}

@@ -79,34 +79,57 @@ const services = [
   }
 ];
 
-// FAQ Data
-// const faqItems = [
-//   {
-//     question: "How long does a typical UI/UX project take?",
-//     answer: "The timeline varies based on project complexity, but most projects range from 4-12 weeks. We'll provide a detailed timeline after our initial consultation."
-//   },
-//   {
-//     question: "Do you conduct user testing?",
-//     answer: "Yes, we incorporate user testing at various stages of the design process to validate our designs and gather valuable feedback for iteration."
-//   },
-//   {
-//     question: "What deliverables will I receive?",
-//     answer: "You'll receive wireframes, high-fidelity mockups, interactive prototypes, design specifications, and assets ready for development."
-//   },
-//   {
-//     question: "Can you work with our development team?",
-//     answer: "Absolutely! We collaborate closely with development teams to ensure smooth implementation of designs and maintain design integrity."
-//   }
-// ];
 
 const UIUXDesign = () => {
   return (
     <>
-      <Helmet>
-        <title>UI/UX Design Services - Burj Tech Consultancy</title>
-        <meta name="description" content="Create intuitive, user-centered UI/UX designs with our expert services. From research and wireframes to prototypes and design systems, using Figma, Adobe XD, and more for websites, apps, and beyond." />
-        <link rel="canonical" href="https://www.btcglobal.info/services/ui/ux-design" />
-      </Helmet>
+    <Helmet>
+      <title>UI/UX Design Services | Website & App Designers | Burj Tech Consultancy</title>
+
+      <meta 
+        name="description" 
+        content="Craft world-class UI/UX designs for websites, mobile apps, and digital products. We specialize in user research, wireframing, prototypes, design systems, usability, and high-fidelity visuals using Figma, Adobe XD, Sketch, and more." 
+      />
+
+      <meta 
+        name="keywords" 
+        content="ui ux design company, ui ux designers india, website design agency, mobile app ui design, figma designers, adobe xd designers, design systems company, burj tech consultancy, btc global, burjtechconsultancy" 
+      />
+
+      <link 
+        rel="canonical" 
+        href="https://www.burjtechconsultancy.com/services/ui/ux-design" 
+      />
+
+      {/* Open Graph Tags */}
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="UI/UX Design Services | Burj Tech Consultancy" />
+      <meta 
+        property="og:description" 
+        content="We create intuitive, clean, and user-centered UI/UX designs for websites and mobile apps using Figma, Adobe XD, and professional design frameworks." 
+      />
+      <meta 
+        property="og:url" 
+        content="https://www.burjtechconsultancy.com/services/ui/ux-design" 
+      />
+      <meta 
+        property="og:image" 
+        content="https://www.burjtechconsultancy.com/preview-uiux.jpg" 
+      />
+
+      {/* Twitter Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="UI/UX Design Services | Burj Tech Consultancy" />
+      <meta 
+        name="twitter:description" 
+        content="Expert UI/UX for websites, mobile apps, SaaS platforms, and enterprise apps — from research to prototypes and full design systems." 
+      />
+      <meta 
+        name="twitter:image" 
+        content="https://www.burjtechconsultancy.com/preview-uiux.jpg" 
+      />
+    </Helmet>
+
       <motion.div
         className="uiux-wrapper"
         initial={{ opacity: 0 }}
@@ -210,53 +233,6 @@ const UIUXDesign = () => {
           </div>
         </section>
 
-        {/* <section className="uiux-faq py-5 bg-light">
-          <Container>
-            <h2 className="text-center fw-bold mb-5">Frequently Asked Questions</h2>
-            <Row className="justify-content-center">
-              <Col lg={8}>
-                <Accordion flush>
-                  {faqItems.map((item, index) => (
-                    <motion.div
-                      key={index}
-                      data-aos="fade-up"
-                      data-aos-delay={index * 100}
-                    >
-                      <Accordion.Item eventKey={index.toString()}>
-                        <Accordion.Header>
-                          <strong>{item.question}</strong>
-                        </Accordion.Header>
-                        <Accordion.Body>{item.answer}</Accordion.Body>
-                      </Accordion.Item>
-                    </motion.div>
-                  ))}
-                </Accordion>
-              </Col>
-            </Row>
-          </Container>
-        </section> */}
-
-        {/* <section className="uiux-services py-5">
-          <Container>
-            <h2 className="text-center fw-bold mb-5">Our UI/UX Services</h2>
-            <Row>
-              {services.map((service, index) => (
-                <Col md={6} lg={4} key={index} className="mb-4">
-                  <motion.div 
-                    className="ser-card text-center p-4 h-100"
-                    data-aos="fade-up"
-                    data-aos-delay={index * 100}
-                    whileHover={{ y: -5 }}
-                  >
-                    <div className="service-icon display-1 mb-3">{service.icon}</div>
-                    <h5 className="fw-bold">{service.title}</h5>
-                    <p className="text-muted">{service.desc}</p>
-                  </motion.div>
-                </Col>
-              ))}
-            </Row>
-          </Container>
-        </section> */}
 
         {/* Services Section */}
         <section className="uiux-services py-5 position-relative">

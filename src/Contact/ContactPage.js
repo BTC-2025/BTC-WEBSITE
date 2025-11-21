@@ -52,11 +52,41 @@ const ContactPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Contact Us - Burj Tech Consultancy</title>
-        <meta name="description" content="Get in touch with Burj Tech Consultancy Pvt Ltd. Contact us via email at burjtechconsultancy@gmail.com, call +91 9444369625, or fill out our form for services, support, or collaborations." />
-        <link rel="canonical" href="https://www.btcglobal.info/contact" />
-      </Helmet>
+    <Helmet>
+      <title>Contact Us - Burj Tech Consultancy</title>
+
+      <meta 
+        name="description" 
+        content="Contact Burj Tech Consultancy Pvt Ltd for IT services, web development, app development, UI/UX design, cloud solutions, and business consulting. Email us at burjtechconsultancy@gmail.com or call +91 9444369625." 
+      />
+
+      <meta 
+        name="keywords" 
+        content="Burj Tech Consultancy, IT services, software development, web development company, UI UX design, branding services, mobile app development, digital marketing, business consulting, Thiruvallur IT company, contact Burj Tech, Burj Tech Consultancy contact" 
+      />
+
+      <link rel="canonical" href="https://www.burjtechconsultancy.com/contact" />
+
+      {/* OpenGraph */}
+      <meta property="og:title" content="Contact Us - Burj Tech Consultancy" />
+      <meta 
+        property="og:description" 
+        content="Reach out to Burj Tech Consultancy Pvt Ltd for IT solutions, development services, and business consultations." 
+      />
+      <meta property="og:url" content="https://www.burjtechconsultancy.com/contact" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://www.burjtechconsultancy.com/preview.jpg" />
+
+      {/* Twitter SEO */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Contact Us - Burj Tech Consultancy" />
+      <meta 
+        name="twitter:description" 
+        content="Get in touch with Burj Tech Consultancy Pvt Ltd for all IT and digital solutions." 
+      />
+      <meta name="twitter:image" content="https://www.burjtechconsultancy.com/preview.jpg" />
+    </Helmet>
+
       <div className="contact-page" style={{ paddingTop: '106px' }}>
         <div className="contact-background">
           <div className="floating-shape shape-1"></div>

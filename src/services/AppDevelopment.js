@@ -121,10 +121,52 @@ const AppDevelopment = () => {
   return (
     <>
       <Helmet>
-        <title>App Development Services - Burj Tech Consultancy</title>
-        <meta name="description" content="Build high-performance mobile and web apps with our expert app development services. Native iOS/Android, cross-platform React Native/Flutter, scalable architecture, and full lifecycle support." />
-        <link rel="canonical" href="https://www.btcglobal.info/services/app-development" />
+        <title>App Development Services | Mobile App Developers | Burj Tech Consultancy</title>
+
+        <meta 
+          name="description" 
+          content="Build high-performance iOS, Android, and cross-platform mobile applications with Burj Tech Consultancy. Expert app developers using React Native, Flutter, Swift, Kotlin, Node.js, cloud integrations, and scalable architecture." 
+        />
+
+        <meta 
+          name="keywords" 
+          content="app development company, mobile app development, android app development, iOS app development, cross platform app development, React Native apps, Flutter apps, software companies in Tiruvallur, it companies in Tiruvallur, app developers India, Burj Tech Consultancy, BTC Global, burjtechconsultancy" 
+        />
+
+        <link 
+          rel="canonical" 
+          href="https://www.burjtechconsultancy.com/services/app-development" 
+        />
+
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="App Development Services | Burj Tech Consultancy" />
+        <meta 
+          property="og:description" 
+          content="We create powerful mobile and web applications using React Native, Flutter, Swift, Kotlin, and modern backend technologies." 
+        />
+        <meta 
+          property="og:url" 
+          content="https://www.burjtechconsultancy.com/services/app-development" 
+        />
+        <meta 
+          property="og:image" 
+          content="https://www.burjtechconsultancy.com/preview-app-dev.jpg" 
+        />
+
+        {/* Twitter Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="App Development Services | Burj Tech Consultancy" />
+        <meta 
+          name="twitter:description" 
+          content="Expert mobile app development—iOS, Android, and cross-platform with modern tech and cloud-powered architecture." 
+        />
+        <meta 
+          name="twitter:image" 
+          content="https://www.burjtechconsultancy.com/preview-app-dev.jpg" 
+        />
       </Helmet>
+
       <motion.div
         className="appdev-wrapper"
         initial={{ opacity: 0 }}

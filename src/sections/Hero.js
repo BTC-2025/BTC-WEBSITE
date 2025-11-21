@@ -264,7 +264,7 @@ const Hero = () => {
               </div>
               <div className="code-content">
                 <div className="code-line">
-                  <span className="code-comment">// Our Services Portfolio</span>
+                  <span className="code-comment">Our Services Portfolio</span>
                 </div>
                 <div className="code-line">
                   <span className="code-keyword">const</span>

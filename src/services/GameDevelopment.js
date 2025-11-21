@@ -125,10 +125,52 @@ const GameDevelopment = () => {
   return (
     <>
       <Helmet>
-        <title>Game Development Services - Burj Tech Consultancy</title>
-        <meta name="description" content="Develop immersive games for mobile, PC, console, AR/VR, and web using Unity, Unreal Engine, and more. Full lifecycle services from concept, prototyping, art production to launch and support." />
-        <link rel="canonical" href="https://www.btcglobal.info/services/game-development" />
+        <title>Game Development Services | Unity, Unreal, Mobile, PC & VR Games | Burj Tech Consultancy</title>
+
+        <meta 
+          name="description" 
+          content="Build immersive 2D, 3D, mobile, PC, console, AR/VR, and web games with Burj Tech Consultancy. Expertise in Unity, Unreal Engine, Godot, C#, C++, multiplayer, prototyping, art, and full game lifecycle development." 
+        />
+
+        <meta 
+          name="keywords" 
+          content="game development company, unity game developers, unreal engine developers, mobile game development, pc game development, console game development, ar vr game development, 3D game development, game studios in India, Burj Tech Consultancy, BTC Global, burjtechconsultancy" 
+        />
+
+        <link 
+          rel="canonical" 
+          href="https://www.burjtechconsultancy.com/services/game-development" 
+        />
+
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Game Development Services | Burj Tech Consultancy" />
+        <meta 
+          property="og:description" 
+          content="We create high-quality mobile, PC, console, AR/VR, and web games using Unity, Unreal, Godot, and cutting-edge technology." 
+        />
+        <meta 
+          property="og:url" 
+          content="https://www.burjtechconsultancy.com/services/game-development" 
+        />
+        <meta 
+          property="og:image" 
+          content="https://www.burjtechconsultancy.com/preview-game-dev.jpg" 
+        />
+
+        {/* Twitter Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Game Development Services | Burj Tech Consultancy" />
+        <meta 
+          name="twitter:description" 
+          content="End-to-end game development—concept, design, prototyping, art, coding, multiplayer, QA, and launch support." 
+        />
+        <meta 
+          name="twitter:image" 
+          content="https://www.burjtechconsultancy.com/preview-game-dev.jpg" 
+        />
       </Helmet>
+
       <motion.div
         className="gamedev-wrapper"
         initial={{ opacity: 0 }}

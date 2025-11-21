@@ -31,44 +31,6 @@ const AboutUsPage = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  // Team members data
-  // const teamMembers = [
-  //   {
-  //     id: 1,
-  //     name: "Sarah Johnson",
-  //     position: "CEO & Founder",
-  //     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-  //     description: "Former tech executive with 10+ years of industry experience.",
-  //     social: { linkedin: "#", twitter: "#" }
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Michael Chen",
-  //     position: "Creative Director",
-  //     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-  //     description: "Award-winning designer with a passion for innovation.",
-  //     social: { linkedin: "#", twitter: "#" }
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Elena Rodriguez",
-  //     position: "Lead Developer",
-  //     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-  //     description: "Technical expert specializing in cutting-edge solutions.",
-  //     social: { linkedin: "#", twitter: "#" }
-  //   },
-  //   {
-  //     id: 4,
-  //     name: "David Wilson",
-  //     position: "Marketing Director",
-  //     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-  //     description: "Strategic marketer with a track record of success.",
-  //     social: { linkedin: "#", twitter: "#" }
-  //   }
-  // ];
-
-  // Values data
   const values = [
     {
       title: "Innovation",
@@ -135,32 +97,49 @@ const AboutUsPage = () => {
     }
   ];
 
-  // Testimonials data
-  // const testimonials = [
-  //   {
-  //     text: "Working with this team has been transformative for our business.",
-  //     author: "Jane Smith",
-  //     role: "CEO, TechStart Inc"
-  //   },
-  //   {
-  //     text: "Their innovative approach helped us solve complex challenges efficiently.",
-  //     author: "Robert Johnson",
-  //     role: "Product Manager, InnovateCo"
-  //   },
-  //   {
-  //     text: "The dedication and expertise they bring to every project is exceptional.",
-  //     author: "Maria Garcia",
-  //     role: "Marketing Director, Growth Solutions"
-  //   }
-  // ];
 
   return (
     <>
-      <Helmet>
-        <title>About Us - Burj Tech Consultancy</title>
-        <meta name="description" content="Learn about our mission, vision, values, and journey at Burj Tech Consultancy." />
-        <link rel="canonical" href="https://www.btcglobal.info/about" />
-      </Helmet>
+    <Helmet>
+      <title>About Us | Burj Tech Consultancy - IT & Software Company</title>
+
+      <meta
+        name="description"
+        content="Learn about Burj Tech Consultancy — a leading IT & software company offering web development, app development, UI/UX design, AI/ML solutions, cloud services, and digital transformation."
+      />
+
+      <meta
+        name="keywords"
+        content="
+          Burj Tech Consultancy,
+          burjtechconsultancy,
+          BTC,
+          software companies in Tiruvallur,
+          IT companies in Tiruvallur,
+          software solutions in Tiruvallur,
+          IT services in Tiruvallur,
+          software company,
+          IT company,
+          digital agency,
+          software development,
+          app development,
+          web development
+        "
+      />
+
+      <link rel="canonical" href="https://www.burjtechconsultancy.com/about" />
+
+      {/* OpenGraph SEO */}
+      <meta property="og:title" content="About Burj Tech Consultancy" />
+      <meta
+        property="og:description"
+        content="Discover our mission, vision, values, and journey at Burj Tech Consultancy — your trusted partner for IT & software development services."
+      />
+      <meta property="og:url" content="https://www.burjtechconsultancy.com/about" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://www.burjtechconsultancy.com/fav.png" />
+    </Helmet>
+
       <div className="about-us-page">
         {/* Hero Section */}
         <section className="about-hero">

@@ -125,10 +125,52 @@ const AIMLDevelopment = () => {
   return (
     <>
       <Helmet>
-        <title>AI & ML Development Services - Burj Tech Consultancy</title>
-        <meta name="description" content="Transform your business with our AI & ML development services. From predictive analytics and computer vision to NLP and recommendation systems, we build intelligent solutions using TensorFlow, PyTorch, and more." />
-        <link rel="canonical" href="https://www.btcglobal.info/services/ai/ml-services" />
+        <title>AI & ML Development Services | Burj Tech Consultancy</title>
+
+        <meta 
+          name="description" 
+          content="Burj Tech Consultancy delivers advanced AI & Machine Learning development services including predictive analytics, NLP, computer vision, and custom AI solutions using TensorFlow, PyTorch, and more." 
+        />
+
+        <meta 
+          name="keywords" 
+          content="AI development company, machine learning development, artificial intelligence services, ML solutions, predictive analytics, NLP services, computer vision development, recommendation systems, software companies in Tiruvallur, IT companies in Tiruvallur, Burj Tech Consultancy, AI developers India, AI consulting services" 
+        />
+
+        <link 
+          rel="canonical" 
+          href="https://www.burjtechconsultancy.com/services/ai/ml-services" 
+        />
+
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="AI & ML Development Services | Burj Tech Consultancy" />
+        <meta 
+          property="og:description" 
+          content="Transform your business with AI & ML solutions — predictive analytics, NLP, computer vision, and more." 
+        />
+        <meta 
+          property="og:url" 
+          content="https://www.burjtechconsultancy.com/services/ai/ml-services" 
+        />
+        <meta 
+          property="og:image" 
+          content="https://www.burjtechconsultancy.com/preview-ai-ml.jpg" 
+        />
+
+        {/* Twitter Preview */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AI & ML Development Services | Burj Tech Consultancy" />
+        <meta 
+          name="twitter:description" 
+          content="AI & ML solutions including computer vision, NLP, predictive analytics, and intelligent automation." 
+        />
+        <meta 
+          name="twitter:image" 
+          content="https://www.burjtechconsultancy.com/preview-ai-ml.jpg" 
+        />
       </Helmet>
+
       <motion.div
         className="aiml-wrapper"
         initial={{ opacity: 0 }}

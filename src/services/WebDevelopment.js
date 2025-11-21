@@ -136,9 +136,51 @@ const WebDevelopment = () => {
     <>
       <Helmet>
         <title>Web Development Services - Burj Tech Consultancy</title>
-        <meta name="description" content="Custom web applications, e-commerce solutions, PWAs, and API development using React, Vue, Node.js, Django, MongoDB, AWS, and more. Full lifecycle from planning to deployment and maintenance." />
-        <link rel="canonical" href="https://www.btcglobal.info/services/web-development" />
+
+        <meta 
+          name="description" 
+          content="Professional web development services including custom web applications, e-commerce platforms, PWAs, and API development. Built using modern technologies like React, Vue, Node.js, Django, MongoDB, PostgreSQL, AWS, and more." 
+        />
+
+        <meta 
+          name="keywords" 
+          content="web development, custom websites, e-commerce development, PWA development, API development, React development, Node.js development, Burj Tech Consultancy" 
+        />
+
+        <link 
+          rel="canonical" 
+          href="https://www.burjtechconsultancy.com/services/web-development" 
+        />
+
+        {/* OpenGraph for Social Media */}
+        <meta property="og:title" content="Web Development Services - Burj Tech Consultancy" />
+        <meta 
+          property="og:description" 
+          content="We create high-performance websites, web apps, e-commerce stores, and PWAs using cutting-edge technologies." 
+        />
+        <meta 
+          property="og:url" 
+          content="https://www.burjtechconsultancy.com/services/web-development" 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.burjtechconsultancy.com/og/web-development.png" />
+
+        {/* Twitter Meta */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta 
+          name="twitter:title" 
+          content="Web Development Services - Burj Tech Consultancy" 
+        />
+        <meta 
+          name="twitter:description" 
+          content="Modern, scalable, and responsive web development services for businesses of all sizes." 
+        />
+        <meta 
+          name="twitter:image" 
+          content="https://www.burjtechconsultancy.com/og/web-development.png" 
+        />
       </Helmet>
+
       <motion.div
         className="webdev-wrapper"
         initial={{ opacity: 0 }}
