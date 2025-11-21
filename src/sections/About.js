@@ -158,7 +158,7 @@ const About = () => {
         {/* Title + short */}
         <header className="abt-header" ref={(el) => (itemsRef.current[0] = el)}>
           <div className="eyebrow">About</div>
-          <h2 id="about-heading" className="abt-title">Who we are — BurjTech Consultancy</h2>
+          <h2 id="about-heading" className="abt-title">Who we are — BURJ Tech Consultancy</h2>
           <p className="abt-lead">
             We build simple, powerful, and future-ready digital systems — from product design to cloud-native deployments.
             Our focus is on clarity, performance and measurable business outcomes.
