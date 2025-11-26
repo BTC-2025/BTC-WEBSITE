@@ -264,11 +264,11 @@ const Hero = () => {
               </div>
               <div className="code-content">
                 <div className="code-line">
-                  <span className="code-comment">Our Services Portfolio</span>
+                  <span className="code-comment">Our Divisions Portfolio</span>
                 </div>
                 <div className="code-line">
                   <span className="code-keyword">const</span>
-                  <span className="code-variable"> services</span>
+                  <span className="code-variable"> division</span>
                   <span className="code-operator"> =</span>
                   <span className="code-bracket"> {'{'} </span>
                 </div>

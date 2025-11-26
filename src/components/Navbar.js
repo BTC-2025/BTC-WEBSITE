@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import logo from "../assets/logo.png";
 import routes from '../assets/logo2.png';
 import linx from '../assets/favicon.png';
+import zonet from '../assets/zonet.png'
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -35,70 +36,156 @@ const Navbar = () => {
   const divisionsDropdownRef = useRef(null);
 
   // Products data structure
+  // const productsData = {
+  //   "ERP": {
+  //     title: "Enterprise Resource Planning",
+  //     items: [
+  //       {
+  //         name: "Finance & Accounting",
+  //         desc: "Manage company finances, budgeting, billing, and accounting operations."
+  //       },
+  //       {
+  //         name: "Inventory Management",
+  //         desc: "Track stock levels, movement, and optimize warehouse operations."
+  //       },
+  //       {
+  //         name: "Purchase Management",
+  //         desc: "Handle vendor management, purchase orders, and procurement workflows."
+  //       },
+  //       {
+  //         name: "Sales Management",
+  //         desc: "Automate sales orders, quotations, and end-to-end sales processes."
+  //       },
+  //       {
+  //         name: "Manufacturing Management",
+  //         desc: "Plan production, track materials, and streamline factory operations."
+  //       }
+  //     ]
+  //   },
+  //   "CRM": {
+  //     title: "Customer Relationship Management",
+  //     items: [
+  //       { name: "Lead Management", desc: "Capture, track, and convert leads efficiently." },
+  //       { name: "Contact Management", desc: "Maintain organized customer and client information." },
+  //       { name: "Opportunity Management", desc: "Monitor deals and sales pipelines in real-time." },
+  //       { name: "Sales Management", desc: "Track sales activities and automate follow-ups." },
+  //       { name: "Customer Support (Ticketing)", desc: "Manage customer issues with a smart ticketing system." },
+  //       { name: "Marketing Automation", desc: "Automate campaigns, email marketing, and audience segmentation." },
+  //       { name: "Task & Activity Management", desc: "Assign and monitor tasks with reminders and scheduling." },
+  //       { name: "Communication Management", desc: "Centralize emails, calls, chats, and communication logs." },
+  //       { name: "Analytics & Reporting", desc: "Generate performance dashboards and insights." },
+  //       { name: "Customer Feedback & Surveys", desc: "Collect and analyze feedback to improve services." },
+  //       { name: "Document Management", desc: "Store, organize, and share CRM-related documents securely." },
+  //       { name: "Mobile CRM", desc: "Access CRM features from mobile devices on the go." }
+  //     ]
+  //   },
+  //   "HRM": {
+  //     title: "Human Resources Management",
+  //     items: [
+  //       { name: "Human Resources Management", desc: "Manage employee records, roles, and lifecycle efficiently." },
+  //       { name: "Payroll Management", desc: "Automate salary generation, deductions, and payslips." },
+  //       { name: "Attendance Management", desc: "Track employee attendance, shift schedules, and leaves." }
+  //     ]
+  //   },
+  //   "SMS": {
+  //     title: "School Management System",
+  //     items: [
+  //       { name: "School Management System", desc: "Full digital solution for administration, academics, and staff." }
+  //     ]
+  //   },
+  //   "POS": {
+  //     title: "Point of Sale",
+  //     items: [
+  //       { name: "Restaurant Management", desc: "Handle billing, orders, table management, and kitchen workflows." }
+  //     ]
+  //   }
+  // };
+
   const productsData = {
-    "ERP": {
-      title: "Enterprise Resource Planning",
-      items: [
-        {
-          name: "Finance & Accounting",
-          desc: "Manage company finances, budgeting, billing, and accounting operations."
-        },
-        {
-          name: "Inventory Management",
-          desc: "Track stock levels, movement, and optimize warehouse operations."
-        },
-        {
-          name: "Purchase Management",
-          desc: "Handle vendor management, purchase orders, and procurement workflows."
-        },
-        {
-          name: "Sales Management",
-          desc: "Automate sales orders, quotations, and end-to-end sales processes."
-        },
-        {
-          name: "Manufacturing Management",
-          desc: "Plan production, track materials, and streamline factory operations."
-        }
-      ]
-    },
-    "CRM": {
-      title: "Customer Relationship Management",
-      items: [
-        { name: "Lead Management", desc: "Capture, track, and convert leads efficiently." },
-        { name: "Contact Management", desc: "Maintain organized customer and client information." },
-        { name: "Opportunity Management", desc: "Monitor deals and sales pipelines in real-time." },
-        { name: "Sales Management", desc: "Track sales activities and automate follow-ups." },
-        { name: "Customer Support (Ticketing)", desc: "Manage customer issues with a smart ticketing system." },
-        { name: "Marketing Automation", desc: "Automate campaigns, email marketing, and audience segmentation." },
-        { name: "Task & Activity Management", desc: "Assign and monitor tasks with reminders and scheduling." },
-        { name: "Communication Management", desc: "Centralize emails, calls, chats, and communication logs." },
-        { name: "Analytics & Reporting", desc: "Generate performance dashboards and insights." },
-        { name: "Customer Feedback & Surveys", desc: "Collect and analyze feedback to improve services." },
-        { name: "Document Management", desc: "Store, organize, and share CRM-related documents securely." },
-        { name: "Mobile CRM", desc: "Access CRM features from mobile devices on the go." }
-      ]
-    },
-    "HRM": {
-      title: "Human Resources Management",
-      items: [
-        { name: "Human Resources Management", desc: "Manage employee records, roles, and lifecycle efficiently." },
-        { name: "Payroll Management", desc: "Automate salary generation, deductions, and payslips." },
-        { name: "Attendance Management", desc: "Track employee attendance, shift schedules, and leaves." }
-      ]
-    },
-    "SMS": {
-      title: "School Management System",
-      items: [
-        { name: "School Management System", desc: "Full digital solution for administration, academics, and staff." }
-      ]
-    },
-    "POS": {
-      title: "Point of Sale",
-      items: [
-        { name: "Restaurant Management", desc: "Handle billing, orders, table management, and kitchen workflows." }
-      ]
-    }
-  };
+  "Digital Essentials": {
+    title: "Digital Essentials Suite",
+    items: [
+      {
+        name: "Access Kit",
+        desc: "Provides secure access to digital services, tools, and authentication modules."
+      },
+      {
+        name: "Digital Books",
+        desc: "A platform to access and manage e-books, learning resources, and digital content."
+      },
+      {
+        name: "Security Tools",
+        desc: "Enhance data privacy, protect user accounts, and safeguard system resources."
+      },
+      {
+        name: "Mail System",
+        desc: "A full-featured email solution for sending, receiving, and managing communication."
+      },
+      {
+        name: "AI Utilities",
+        desc: "AI-based assistance for tasks, predictions, automation, and smart suggestions."
+      }
+    ]
+  },
+
+  "Transport & Travel": {
+    title: "Transport, Booking & B2B Solutions",
+    items: [
+      {
+        name: "Transport Management",
+        desc: "Plan, track, and manage transportation fleets and logistics."
+      },
+      {
+        name: "Booking System",
+        desc: "Online ticketing and reservation system for travel, events, and services."
+      },
+      {
+        name: "B2B Platform",
+        desc: "A business-to-business marketplace for managing partners, vendors, and services."
+      }
+    ]
+  },
+
+  "Chat System": {
+    title: "Chat & Instant Messaging",
+    items: [
+      {
+        name: "Chat Application",
+        desc: "Real-time messaging platform supporting text, media, and group communication."
+      }
+    ]
+  },
+
+  "Utility & Management": {
+    title: "Management & Utility Suite",
+    items: [
+      // Management (ERP, CRM, POS, SMS, etc.)
+      {
+        name: "ERP, CRM, POS, SMS",
+        desc: "Comprehensive business management tools covering operations, sales, HR, schools, and retail."
+      },
+
+      // Meet (album, mx player, camera & meet)
+      {
+        name: "Media & Meet",
+        desc: "Media suite including gallery, video player, camera tools, and online meeting platform."
+      },
+
+      // Reminder (calendar, clock, reminder)
+      {
+        name: "Reminder & Scheduling Tools",
+        desc: "Calendar, clock, and reminder utilities for managing events, alarms, and schedules."
+      },
+
+      // Call (call, contact, business calling, truecaller, justdial & message)
+      {
+        name: "Communication & Caller Suite",
+        desc: "Includes calling, contacts, messaging, caller identification, business calling, and directory search."
+      }
+    ]
+  }
+};
+
 
   // Services data
   const servicesData = [
@@ -109,31 +196,51 @@ const Navbar = () => {
     "Cloud Services"
   ];
 
-  // Divisions data
+
   const divisionsData = {
-    "BTC Routes": {
-      title: "BTC Routes",
-      description: "Comprehensive education and career development platform",
-      items: [
-        "Professional Courses",
-        "Industry Internships", 
-        "Career Placement Assistance",
-        "Skill Development Programs",
-        "Mentorship & Guidance"
-      ]
-    },
-    "BTC Linx": {
-      title: "BTC Linx", 
-      description: "Advanced AI automation and communication solutions",
-      items: [
-        "AI Automation Solutions",
-        "AI Automated Tele Calling",
-        "Intelligent Process Automation",
-        "Smart Communication Systems",
-        "AI-Powered Customer Engagement"
-      ]
-    }
-  };
+  "BTC Routes": {
+    title: "BTC Routes",
+    description: "Comprehensive education and career development platform",
+    link: "https://www.btcroutes.com",
+    image: routes,
+    items: [
+      "Professional Courses",
+      "Industry Internships",
+      "Career Placement Assistance",
+      "Skill Development Programs",
+      "Mentorship & Guidance"
+    ]
+  },
+
+  "BTC Linx": {
+    title: "BTC Linx",
+    description: "Advanced AI automation and communication solutions",
+    link: "https://www.btclinx.com",
+    image: linx,
+    items: [
+      "AI Automation Solutions",
+      "AI Automated Tele Calling",
+      "Intelligent Process Automation",
+      "Smart Communication Systems",
+      "AI-Powered Customer Engagement"
+    ]
+  },
+
+  "BTC ZoneT": {
+    title: "BTC ZoneT",
+    description: "Innovative hardware products, devices, and technology systems",
+    link: "https://www.btczonet.com",  // ← Add your actual URL
+    image: zonet,                     // ← Add your ZoneT image import
+    items: [
+      "Smart Devices & Gadgets",
+      "IoT Hardware Solutions",
+      "Embedded Systems",
+      "Network & Connectivity Devices",
+      "Hardware Integration & Support"
+    ]
+  }
+};
+
 
   // Handle scroll effect
   useEffect(() => {
@@ -700,9 +807,10 @@ const handleSubmitConsultation = async (e) => {
               >
                 <div className="d-flex align-items-center justify-content-between">
                   <h3 className="mega-dropdown-category-title">{divisionData.title}</h3>
-                  <Link to={divisionData.title === "BTC Routes" ? "https://www.btcroutes.com" : "https://www.btclinx.com"} target="_blank">
-                    <img src={divisionData.title === "BTC Routes" ? routes : linx} width={80} alt="routes"  />
+                  <Link to={divisionData.link} target="_blank">
+                    <img src={divisionData.image} width={80} alt={divisionData.title} />
                   </Link>
+
                 </div>
                 <p className="mega-dropdown-category-description">
                   {divisionData.description}
