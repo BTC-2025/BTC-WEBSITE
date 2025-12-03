@@ -9,7 +9,7 @@ import Industries from '../sections/Industries'
 import Technologies from '../sections/Technologies'
 // import Contact from '../sections/Contact'
 import GetInTouch from '../sections/GetInTouch'
-import FAQ from '../sections/FAQ'
+// import FAQ from '../sections/FAQ'
 import WhyUsPage from '../sections/WhyUsPage'
 
 const Home = () => {
@@ -62,7 +62,7 @@ const Home = () => {
         <WhyUsPage />
         <Industries />
         <Technologies />
-        <FAQ />
+        {/* <FAQ /> */}
         <GetInTouch />
       </div>
     </>
