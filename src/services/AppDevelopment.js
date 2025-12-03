@@ -186,7 +186,7 @@ const AppDevelopment = () => {
                   We build high-performance, scalable applications that transform 
                   your ideas into digital solutions users love.
                 </p>
-                <div className="mt-4">
+                <div className="mt-4 d-flex align-items-center">
                   <Link to="/#services">
                     <Button size="lg" className="appdev-btn me-3 my-3">⬅ Back to Services</Button>
                   </Link>

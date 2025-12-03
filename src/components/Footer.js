@@ -201,7 +201,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="btc-link">
+                <Link to="/services/cloud-services" className="btc-link">
                   <FaArrowRight className="btc-link-arrow" />
                   Cloud Services
                 </Link>

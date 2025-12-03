@@ -190,7 +190,7 @@ const CloudServices = () => {
                   We design, migrate, and manage cloud infrastructure that scales with your business, 
                   enhances agility, and reduces costs.
                 </p>
-                <div className="mt-4">
+                <div className="mt-4 d-flex align-items-center">
                   <Link to="/#services">
                     <Button size="lg" className="cloud-btn me-3">⬅ Back to Services</Button>
                   </Link>

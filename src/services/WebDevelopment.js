@@ -200,9 +200,9 @@ const WebDevelopment = () => {
                   We build responsive, modern, and scalable websites that drive 
                   results and deliver exceptional user experiences.
                 </p>
-                <div className="mt-4">
+                <div className="mt-4 d-flex">
                   <Link to="/#services">
-                    <Button size="lg" className="webdev-btn me-3">⬅ Back to Services</Button>
+                    <Button size="lg" className="webdev-btns me-3">⬅ Back to Services</Button>
                   </Link>
                   <Link to="/buynow">
                     <Button size="lg" variant="outline-light" className="ms-2">
