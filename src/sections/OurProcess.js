@@ -256,7 +256,7 @@ const OurProcess = () => {
                     </div>
 
                     <div>
-                      <h3 className="process-step-title">{step.title}</h3>
+                      <h1 className="process-step-title">{step.title}</h1>
                       <p className="process-desc">{step.desc}</p>
                     </div>
 

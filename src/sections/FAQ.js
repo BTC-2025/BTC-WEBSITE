@@ -52,11 +52,12 @@ const FAQ = () => {
         <Row className="justify-content-center mb-5">
           <Col lg={8} className="text-center">
             <motion.h2 
-              className="fw-bold mb-3 display-5 gradient-text"
+              className="mb-3 display-5 gradient-text"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
+              style={{fontWeight:"300"}}
             >
               Frequently Asked Questions
             </motion.h2>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
 
-import Hero from "../sections/Hero"
+import Hero from "../sections/Heros"
 import About from '../sections/About'
 import Services from '../sections/Services'
 import OurProcess from '../sections/OurProcess'

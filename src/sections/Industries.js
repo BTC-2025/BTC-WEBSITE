@@ -349,9 +349,9 @@ const Industries = () => {
   return (
     <section className="industries-section py-5" id="industries">
       <Container>
-        <h2 className="text-center fw-bold mb-5 section-title" data-aos="fade-up">
+        <h1 className="text-center mb-5 section-title" data-aos="fade-up">
           Industries We Serve
-        </h2>
+        </h1>
         <Row>
           {/* LEFT TABS */}
           <Col md={4}>
@@ -368,8 +368,8 @@ const Industries = () => {
                   {industry.icon}
                 </div>
                 <div>
-                  <h6 className="mb-1 fw-bold">{industry.name}</h6>
-                  <small className={activeIndex === index ? "text-white-50" : "text-muted"}>
+                  <h6 className="mb-1" style={{fontWeight:"350"}}>{industry.name}</h6>
+                  <small className={activeIndex === index ? "text-white-50" : "text-muted"} style={{fontWeight:"300"}}>
                     All kind of industry
                   </small>
                 </div>
@@ -391,7 +391,7 @@ const Industries = () => {
                 </Col>
 
                 <Col md={6} data-aos="fade-up">
-                  <h4 className="fw-bold mb-3 text-dark">{industriesData[activeIndex].name}</h4>
+                  <h3 className=" mb-3 text-dark" style={{fontWeight:"400"}}>{industriesData[activeIndex].name}</h3>
                   <p className="text-muted mb-4">{industriesData[activeIndex].description}</p>
 
                   <Row className="g-3">

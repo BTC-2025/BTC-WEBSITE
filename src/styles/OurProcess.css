@@ -4,7 +4,7 @@
 
 .process-title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -84,4 +84,13 @@
   min-width: 80px;
   min-height: 80px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+.process-step-title{
+  font-weight: 350;
+}
+
+.process-desc{
+  font-weight: 300;
 }

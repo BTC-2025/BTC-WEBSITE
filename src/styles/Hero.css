@@ -135,10 +135,10 @@
 }
 
 .hero-titles {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 400;
   line-height: 1.1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   color: #1a1a2e !important;
 }
 
@@ -214,6 +214,7 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .btn-primary, .btn-secondary {
@@ -284,6 +285,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  
 }
 
 /* Code Preview */
@@ -1016,4 +1018,26 @@
   .badge-content p {
     font-size: 0.75rem;
   }
+}
+
+
+
+.visual-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.visual-wrapper .code-preview {
+  flex: 2;
+}
+
+.visual-wrapper .service-badges.side-by-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: flex-start;
+  height: 100%;
 }

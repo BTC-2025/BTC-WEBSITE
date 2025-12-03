@@ -171,6 +171,7 @@ import React from 'react';
 import '../styles/Hero.css';
 import linx from '../assets/favicon.png';
 import routes from '../assets/logo2.png';
+import zonet from '../assets/zonet.png'
 import { Link,useNavigate } from 'react-router-dom';
 
 const Hero = () => {
@@ -251,8 +252,7 @@ const Hero = () => {
           </div>
 
           {/* Right Side - Clean Professional Coding Section */}
-          <div className="hero-visual-section">
-            {/* Enhanced Code Preview */}
+          {/* <div className="hero-visual-section">
             <div className="code-preview professional">
               <div className="code-header">
                 <div className="code-dots">
@@ -340,7 +340,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Compact Service Badges */}
             <div className="service-badges">
               <Link to="https://www.btclinx.com">
                 <div className="service-badge linx-badge">
@@ -366,10 +365,187 @@ const Hero = () => {
                 </div>
               </Link>
             </div>
-          </div>
+          </div> */}
+
+<div className="hero-visual-section">
+  <div className="visual-wrapper">
+
+    {/* Enhanced Code Preview */}
+    <div className="code-preview professional">
+      <div className="code-header">
+        <div className="code-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className="code-title">solutions.js</div>
+      </div>
+      <div className="code-content">
+        <div className="code-line">
+          <span className="code-comment">Our Divisions Portfolio</span>
+        </div>
+        <div className="code-line">
+          <span className="code-keyword">const</span>
+          <span className="code-variable"> division</span>
+          <span className="code-operator"> =</span>
+          <span className="code-bracket"> {'{'} </span>
         </div>
 
-        {/* Bottom Section - Scroll Indicator */}
+        {/* LINX */}
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-property">linx</span>
+          <span className="code-operator">:</span>
+          <span className="code-bracket"> {'{'} </span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-space"></span>
+          <span className="code-property">aiTelecalling</span>
+          <span className="code-operator">:</span>
+          <span className="code-string"> "intelligent"</span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-space"></span>
+          <span className="code-property">networkAuto</span>
+          <span className="code-operator">:</span>
+          <span className="code-string"> "automated"</span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-space"></span>
+          <span className="code-property">dataCenter</span>
+          <span className="code-operator">:</span>
+          <span className="code-string"> "optimized"</span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-bracket"> {'}'},</span>
+        </div>
+
+        {/* ROUTES */}
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-property">routes</span>
+          <span className="code-operator">:</span>
+          <span className="code-bracket"> {'{'} </span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-space"></span>
+          <span className="code-property">courses</span>
+          <span className="code-operator">:</span>
+          <span className="code-string"> "industry-ready"</span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-space"></span>
+          <span className="code-property">internship</span>
+          <span className="code-operator">:</span>
+          <span className="code-string"> "hands-on"</span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-space"></span>
+          <span className="code-property">placement</span>
+          <span className="code-operator">:</span>
+          <span className="code-string"> "guaranteed"</span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-bracket"> {'}'},</span>
+        </div>
+
+        {/* ZONET */}
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-property">zonet</span>
+          <span className="code-operator">:</span>
+          <span className="code-bracket"> {'{'} </span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-space"></span>
+          <span className="code-property">blindSole</span>
+          <span className="code-operator">:</span>
+          <span className="code-string"> "wearable-navigation"</span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-space"></span>
+          <span className="code-property">smartAutomation</span>
+          <span className="code-operator">:</span>
+          <span className="code-string"> "home-office-automation"</span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-space"></span>
+          <span className="code-property">hardwareSolutions</span>
+          <span className="code-operator">:</span>
+          <span className="code-string"> "iot-devices-and-controllers"</span>
+        </div>
+        <div className="code-line">
+          <span className="code-space"></span>
+          <span className="code-bracket"> {'}'} </span>
+        </div>
+
+        <div className="code-line">
+          <span className="code-bracket"> {'}'} </span>
+        </div>
+      </div>
+    </div>
+
+    {/* Compact Service Badges */}
+    <div className="service-badges side-by-side mt-4">
+
+      {/* LINX */}
+      <Link to="https://www.btclinx.com">
+        <div className="service-badge linx-badge">
+          <div className="badge-icon">
+            <img src={linx} alt="Linx" />
+          </div>
+          <div className="badge-content">
+            <h4>Linx Solutions</h4>
+            <p>AI • Automation • Data Center</p>
+          </div>
+        </div>
+      </Link>
+
+      {/* ROUTES */}
+      <Link to="https://www.btcroutes.com">
+        <div className="service-badge routes-badge">
+          <div className="badge-icon">
+            <img src={routes} alt="Routes" />
+          </div>
+          <div className="badge-content">
+            <h4>Routes Platform</h4>
+            <p>Courses • Internship • Placement</p>
+          </div>
+        </div>
+      </Link>
+
+      {/* ZONET */}
+      <Link to="https://www.btc-zonet.com">
+        <div className="service-badge zonet-badge">
+          <div className="badge-icon">
+            <img src={zonet} alt="ZoneT" />
+          </div>
+          <div className="badge-content">
+            <h4>ZoneT Hardware</h4>
+            <p>BlindSole • Smart Automation • IoT Devices</p>
+          </div>
+        </div>
+      </Link>
+
+    </div>
+
+  </div>
+</div>
+
+        </div>
+
+    
         <div className="hero-bottom-section">
           <div className="clean-scroll-indicator">
             <div className="scroll-text">Discover Our Approach</div>

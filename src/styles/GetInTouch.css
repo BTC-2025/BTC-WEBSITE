@@ -14,6 +14,7 @@
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #333;
+  font-weight: 400;
 }
 
 .section-subtitle {
@@ -24,6 +25,7 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 300;
 }
 
 .contacts-content {
@@ -65,12 +67,14 @@
   margin: 0 0 8px 0;
   font-size: 1.2rem;
   color: #333;
+  font-weight: 300;
 }
 
 .info-item .details p {
   margin: 0;
   color: #666;
   line-height: 1.6;
+  font-weight: 300;
 }
 
 .social-links {

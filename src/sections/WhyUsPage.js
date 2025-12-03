@@ -44,7 +44,7 @@ const WhyUsPage = () => {
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
-          <h2>Why Choose Us?</h2>
+          <h1>Why Choose Us?</h1>
           <p className="section-subtitle">Discover what sets us apart and makes us the right partner for your success</p>
         </div>
 
