@@ -83,16 +83,21 @@
 
 /* Main Grid - Increased gap */
 .hero-grid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8rem;
-  align-items: start;
+  align-items: start; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* Left Column - Content */
 .content-column {
   padding-top: 1rem;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 .content-wrapper {
@@ -596,3 +601,4 @@
     gap: 0.5rem;
   }
 }
+
