@@ -259,7 +259,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="btc-footer-bottom">
           <div className="btc-copyright">
-            © 2025 BURJ Tech Consultancy (OPC) Pvt Ltd. All rights reserved.
+            © {new Date().getFullYear()}&nbsp;BURJ Tech Consultancy (OPC) Pvt Ltd. All rights reserved.
           </div>
         </div>
       </div>
